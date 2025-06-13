@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 신제용 포트폴리오 웹사이트
 
-## Getting Started
+개발자 겸 프리랜서 강사 신제용의 포트폴리오 웹사이트입니다.
 
-First, run the development server:
+## 기술 스택
+
+- **프레임워크**: Next.js 14 (App Router)
+- **언어**: TypeScript
+- **스타일링**: Tailwind CSS, shadcn/ui
+- **렌더링 방식**: Static Site Generation (SSG)
+- **배포**: Vercel
+
+## 주요 기능
+
+- 다크모드/라이트모드 지원
+- 완벽한 반응형 웹 디자인
+- SEO 최적화 (메타태그, OG 태그, sitemap.xml, robots.txt)
+
+## 설치 및 실행 방법
 
 ```bash
+# 의존성 설치
+npm install
+
+# 개발 서버 실행
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 프로덕션 빌드
+npm run build
+
+# 프로덕션 모드 실행
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 페이지 구성
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **홈**: 한 줄 소개, 주요 기술 요약
+- **소개**: 개발 경력 요약, 강의 철학, 교육 경험 및 커리어 스토리
+- **기술 스택**: 사용 기술 소개 (머신러닝, 딥러닝, 백/프론트엔드, 알고리즘 등)
+- **연락처**: 이메일 폼, SNS 링크
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 확장 고려 요소
 
-## Learn More
+- Project 섹션 추가: 강의 및 실무 프로젝트 상세 소개
+- 블로그 또는 강의 플랫폼 연동: Velog, Tistory, Notion, 유튜브 강의 등
+- i18n (다국어 지원): 영문 페이지 지원
+- 질문 응답 챗봇 연동: 바이브 코딩 관련 LLM 기반 상담기능
 
-To learn more about Next.js, take a look at the following resources:
+## 라이센스
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+이 프로젝트는 MIT 라이센스로 배포됩니다.
