@@ -29,7 +29,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-screen-xl items-center">
+      <div className="container flex h-16 max-w-screen-xl mx-auto px-4 items-center">
         <div className="mr-4 flex items-center md:mr-6">
           <Link href="/" className="font-bold text-xl">
             신제용
@@ -69,11 +69,11 @@ export function Header() {
             <NavigationMenuList>
               {NAV_ITEMS.map((item) => (
                 <NavigationMenuItem key={item.href}>
-                  <Link href={item.href} legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                    <Link href={item.href}>
                       {item.name}
-                    </NavigationMenuLink>
-                  </Link>
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               ))}
             </NavigationMenuList>
