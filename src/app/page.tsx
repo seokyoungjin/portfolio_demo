@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Github, Mail, Youtube } from "lucide-react";
+import { ArrowRight, Github, Mail } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="container max-w-screen-xl">
+    <div className="container max-w-screen-xl mx-auto px-4">
       {/* Hero Section */}
       <section className="py-16 md:py-24 lg:py-32">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 items-center">
@@ -24,7 +24,9 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg">
                 <Link href="/contact">
-                  연락하기 <ArrowRight className="ml-2 h-4 w-4" />
+                  <span className="flex items-center">
+                    연락하기 <ArrowRight className="ml-2 h-4 w-4" />
+                  </span>
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
@@ -32,24 +34,34 @@ export default function Home() {
               </Button>
             </div>
             <div className="flex items-center gap-4">
-              <Link href="https://github.com" target="_blank" className="text-muted-foreground hover:text-foreground">
+              <Link
+                href="https://github.com/seokyoungjin"
+                target="_blank"
+                className="text-muted-foreground hover:text-foreground"
+              >
                 <Github size={24} />
               </Link>
-              <Link href="mailto:example@email.com" className="text-muted-foreground hover:text-foreground">
+              <Link
+                href="mailto:example@email.com"
+                className="text-muted-foreground hover:text-foreground"
+              >
                 <Mail size={24} />
-              </Link>
-              <Link href="https://youtube.com" target="_blank" className="text-muted-foreground hover:text-foreground">
-                <Youtube size={24} />
               </Link>
             </div>
           </div>
-          <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-full border-4 border-background bg-muted">
-            {/* 프로필 이미지 - 실제 이미지로 교체 필요 */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-background/10" />
+          <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-full border-4 border-background">
+            <Image
+              src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=1000&auto=format&fit=crop"
+              alt="신제용 프로필 이미지"
+              fill
+              sizes="(max-width: 768px) 100vw, 400px"
+              priority
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-background/5 mix-blend-overlay" />
           </div>
         </div>
       </section>
-
       {/* Skills Overview Section */}
       <section className="py-16 md:py-24 border-t border-border/40">
         <div className="space-y-6 text-center mb-12">
@@ -87,7 +99,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-16 md:py-24 border-t border-border/40">
         <div className="bg-primary/10 rounded-lg p-8 md:p-12 text-center space-y-6">
