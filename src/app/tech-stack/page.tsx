@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import { Separator } from "@/components/ui/separator";
 import { 
   Card,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle 
