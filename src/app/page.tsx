@@ -12,7 +12,7 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-              안녕하세요, <br />
+              안녕하세요! <br />
               <span className="text-primary">개발자 겸 강사</span> <br />
               신제용입니다
             </h1>
