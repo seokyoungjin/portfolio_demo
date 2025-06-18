@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.example.com/sitemap.xml 
+Sitemap: https://portfolio-demo-lime-five.vercel.app/sitemap.xml 
