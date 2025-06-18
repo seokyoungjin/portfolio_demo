@@ -1,0 +1,8 @@
+{
+  "public": true,
+  "rewrites": [
+    { "source": "/google03e32c784c452ebc.html", "destination": "/google03e32c784c452ebc.html" },
+    { "source": "/naverf3aee501890ea24ce5bd3cb7261a84dc.html", "destination": "/naverf3aee501890ea24ce5bd3cb7261a84dc.html" },
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" }
+  ]
+} 
